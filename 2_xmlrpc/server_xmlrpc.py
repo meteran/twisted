@@ -14,6 +14,5 @@ class Server(XMLRPC):
         return random.random()
 
 
-
 reactor.listenTCP(PORT, Site(Server()))
 reactor.run()
